@@ -10,6 +10,10 @@
     --#{$prefix}#{$color}: #{$value};
   }
 
+  @each $breakpoint, $value in $container-max-widths {
+    --#{$prefix}container-#{$breakpoint}-max-width: #{$value};
+  }
+
   @each $color, $value in $grays {
     --#{$prefix}gray-#{$color}: #{$value};
   }
